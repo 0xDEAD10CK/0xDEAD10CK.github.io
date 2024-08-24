@@ -65,9 +65,16 @@ a {
     font-weight: bold;
 }
 
+#languages{
+	display: flex;
+	gap: 5px;
+}
+
 .codeLabel {
 	border: 1px black solid;
 	border-radius: 4px;
+	padding: 2px 5px;
+	font-weight: bold;
 }
 
 .python {
