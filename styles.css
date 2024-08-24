@@ -65,6 +65,11 @@ a {
     font-weight: bold;
 }
 
+span.python{
+	background-color: #a9e05c;
+	border: 1px black solid;
+}
+
 @media (max-width: 768px) {
     body {
         padding: 10px;
@@ -98,3 +103,4 @@ a {
     }
     
 }
+
