@@ -65,7 +65,7 @@ a {
     font-weight: bold;
 }
 
-span.python{
+span#python{
 	background-color: #a9e05c;
 	border: 1px black solid;
 	border-radius: 4px;
