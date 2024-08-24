@@ -65,10 +65,25 @@ a {
     font-weight: bold;
 }
 
-span#python{
-	background-color: #a9e05c;
+.code {
 	border: 1px black solid;
 	border-radius: 4px;
+}
+
+#python {
+	background-color: #a9e05c;
+}
+
+#html {
+	background-color: #77f5f7;
+}
+
+#css {
+	background-color: #f7ff63;
+}
+
+#javascript {
+	background-color: #fc5677;
 }
 
 @media (max-width: 768px) {
