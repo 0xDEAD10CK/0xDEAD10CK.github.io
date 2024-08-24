@@ -68,6 +68,7 @@ a {
 span.python{
 	background-color: #a9e05c;
 	border: 1px black solid;
+	border-radius: 4px;
 }
 
 @media (max-width: 768px) {
