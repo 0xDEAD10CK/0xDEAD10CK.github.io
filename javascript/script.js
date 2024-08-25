@@ -1,4 +1,6 @@
-document.addEventListener("DOMContentLoaded", () => {
+const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
+
+document.addEventListener("DOMContentLoaded", async () => {
     if (!localStorage.getItem("animationPlayed")) {
         // Run the intro animation
         runIntroAnimation();
@@ -9,12 +11,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-function runIntroAnimation() {
+const runIntroAnimation = async () => {
     const terminal = document.getElementById("terminal");
-    const introText = "User/> run 0xDEAD10CK_Porfolio.html\n";
+    const introText = "run 0xDEAD10CK_Porfolio.html\n";
     let i = 0;
 
-    function typeWriter() {
+    terminal.innerHTML += "User/> "
+
+    await sleep(1000)
+
+    const typeWriter = () => {
         if (i < introText.length) {
             terminal.innerHTML += introText.charAt(i);
             i++;
@@ -29,7 +35,7 @@ function runIntroAnimation() {
     localStorage.setItem("animationPlayed", "true");
 }
 
-function exitAnimation() {
+const exitAnimation = () => {
     const intro = document.getElementById("intro");
     intro.classList.add("fade-out"); // Apply the fade-out class to the intro section
     setTimeout(() => {
