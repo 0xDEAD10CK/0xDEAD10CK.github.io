@@ -9,6 +9,33 @@ body {
     height: 100%;
 }
 
+#intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Courier New', monospace;
+    color: green;
+}
+
+#terminal {
+    font-size: 1.5em;
+    white-space: pre-line;
+    text-align: center;
+}
+
+.fade-out {
+    animation: fadeOut 2s forwards;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
 header {
     background: #35424a;
     color: #ffffff;
@@ -42,7 +69,7 @@ main {
     max-width: 1000px;
     margin: auto;
     background: #ffffff;
-    box-shadow: 0 0 50px #ccc;
+    box-shadow: 0 0 30px #000000;
 }
 
 .project {
